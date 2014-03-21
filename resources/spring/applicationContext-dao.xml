@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="
+	http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+	http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.5.xsd
+	http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.5.xsd">
+
+	<bean id="tExtVidyoMemberDAO" class="com.vccloud.portal.db.dao.TExtVidyoMemberDAOImpl">
+		<property name="sqlMapClient">
+			<ref bean="sqlMapClient-acl" />
+		</property>
+	</bean>
+	<bean id="tExtVidyoTenantDAO" class="com.vccloud.portal.db.dao.TExtVidyoTenantDAOImpl">
+		<property name="sqlMapClient">
+			<ref bean="sqlMapClient-acl" />
+		</property>
+	</bean>
+	<bean id="clientinstallations2DAO" class="com.vccloud.portal.db.dao.Clientinstallations2DAOImpl">
+		<property name="sqlMapClient">
+			<ref bean="sqlMapClient-business" />
+		</property>
+	</bean>
+	<bean id="conferencecall2DAO" class="com.vccloud.portal.db.dao.Conferencecall2DAOImpl">
+		<property name="sqlMapClient">
+			<ref bean="sqlMapClient-business" />
+		</property>
+	</bean>
+	<bean id="tPortalInfoDAO" class="com.vccloud.portal.db.dao.TPortalInfoDAOImpl">
+		<property name="sqlMapClient">
+			<ref bean="sqlMapClient-acl" />
+		</property>
+	</bean>
+	<bean id="tExtVidyoPortalDAO" class="com.vccloud.portal.db.dao.TExtVidyoPortalDAOImpl">
+		<property name="sqlMapClient">
+			<ref bean="sqlMapClient-acl" />
+		</property>
+	</bean>
+	<bean id="tLegacyDAO" class="com.vccloud.portal.db.dao.TLegacyDAOImpl">
+		<property name="sqlMapClient">
+			<ref bean="sqlMapClient-acl" />
+		</property>
+	</bean>
+	<bean id="tCdrDAO" class="com.vccloud.portal.db.dao.TCdrDAOImpl">
+		<property name="sqlMapClient">
+			<ref bean="sqlMapClient-acl" />
+		</property>
+	</bean>
+	<bean id="tReportDAO" class="com.vccloud.portal.db.dao.TReportDAOImpl">
+		<property name="sqlMapClient">
+			<ref bean="sqlMapClient-acl" />
+		</property>
+	</bean>
+	<bean id="tExtVidyoPortalConfigDAO" class="com.vccloud.portal.db.dao.TExtVidyoPortalConfigDAOImpl">
+		<property name="sqlMapClient">
+			<ref bean="sqlMapClient-acl" />
+		</property>
+	</bean>
+	<bean id="tPortalEmailConfigDAO" class="com.vccloud.portal.db.dao.TPortalEmailConfigDAOImpl">
+		<property name="sqlMapClient">
+			<ref bean="sqlMapClient-acl" />
+		</property>
+	</bean>
+</beans>

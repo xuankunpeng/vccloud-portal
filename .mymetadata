@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="vccloud-portal"
+  id="myeclipse.1378272439002"
+  context-root="/vccloud-portal"
+  j2ee-spec="5.0"
+  archive="vccloud-portal.war">
+  <attributes>
+    <attribute name="webrootdir" value="war" />
+  </attributes>
+</project-module>
+

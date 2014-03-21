@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowViewLayout Version="1.2">
+  <StrutsActivity path="/user/signIn.do" location="50,50" dimension="293,96" />
+  <StrutsActivity path="/user/signOut.do" location="650,1250" dimension="303,96" />
+  <StrutsActivity path="/vidyo/searchConferenceCall2s.do" location="650,50" dimension="402,96" />
+  <StrutsActivity path="/vidyo/storePortalInfo.do" location="50,250" dimension="351,96" />
+  <StrutsActivity path="/vidyo/getPortalInfo.do" location="50,450" dimension="340,96" />
+  <StrutsActivity path="/user/searchMembers.do" location="650,250" dimension="352,96" />
+  <StrutsActivity path="/user/updateMemberPassword.do" location="650,450" dimension="406,96" />
+  <StrutsActivity path="/user/updatePassword.do" location="50,650" dimension="356,96" />
+  <StrutsActivity path="/user/updateDisplayName.do" location="650,650" dimension="377,96" />
+  <StrutsActivity path="/user/updateMemberDisplayName.do" location="50,850" dimension="427,96" />
+  <StrutsActivity path="/vidyo/searchRooms.do" location="650,850" dimension="343,96" />
+  <StrutsActivity path="/vidyo/updateRoomName.do" location="50,1050" dimension="376,96" />
+  <StrutsActivity path="/vidyo/updateRoomPin.do" location="650,1050" dimension="358,96" />
+  <StrutsActivity path="/vidyo/clearRoom.do" location="50,1250" dimension="328,96" />
+  <StrutsActivity path="/vidyo/storeLegacy.do" location="50,1450" dimension="334,96" />
+  <StrutsActivity path="/vidyo/getLegacies.do" location="650,1450" dimension="333,96" />
+  <StrutsActivity path="/vidyo/assignLegacies.do" location="50,1650" dimension="351,96" />
+  <StrutsActivity path="/vidyo/deleteLegacy.do" location="650,1650" dimension="340,96" />
+  <StrutsActivity path="/vidyo/searchLegacies.do" location="50,1850" dimension="352,96" />
+  <StrutsActivity path="/vidyo/getRoomProfile.do" location="650,2050" dimension="355,96" />
+  <StrutsActivity path="/vidyo/storeRoomProfile.do" location="650,1850" dimension="366,96" />
+  <StrutsActivity path="/vidyo/resetRoomURL.do" location="50,2050" dimension="353,96" />
+  <StrutsActivity path="/vidyo/searchCdrs.do" location="1250,450" dimension="329,104" />
+  <StrutsActivity path="/vidyo/getEmailConfig.do" location="1250,650" dimension="352,104" />
+  <StrutsActivity path="/vidyo/storeEmailConfig.do" location="1250,850" dimension="363,104" />
+  <StrutsActivity path="/vidyo/sendEmail.do" location="1250,1050" dimension="323,104" />
+  <StrutsActivity path="/vidyo/getEmails.do" location="1250,1250" dimension="320,104" />
+  <StrutsActivity path="/vidyo/storeRoom.do" location="1250,1450" dimension="320,104" />
+  <StrutsActivity path="/vidyo/deleteRoom.do" location="1250,1650" dimension="395,104" />
+</FlowViewLayout>
+

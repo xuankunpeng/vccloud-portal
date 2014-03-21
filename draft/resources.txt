@@ -1,0 +1,5 @@
+http://v.seekoom.com/services/v1_1/VidyoPortalUserService?wsdl
+
+http://v.seekoom.com/services/VidyoPortalAdminService?wsdl
+
+http://lan.seekoom.com/api/

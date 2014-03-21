@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ibatorConfiguration PUBLIC "-//Apache Software Foundation//DTD Apache iBATIS Ibator Configuration 1.0//EN" "http://ibatis.apache.org/dtd/ibator-config_1_0.dtd">
+
+<ibatorConfiguration>
+	<classPathEntry location="../../lib/runtime/mysql-connector-java-5.0.8-bin.jar" />
+	<ibatorContext id="familydbTables" targetRuntime="Ibatis2Java2">
+	<!-- acl -->
+		<jdbcConnection driverClass="com.mysql.jdbc.Driver" connectionURL="jdbc:mysql://192.168.1.100/communication" userId="root" password="sccc123">
+		</jdbcConnection>
+
+		<javaTypeResolver>
+			<property name="forceBigDecimals" value="false" />
+		</javaTypeResolver>
+
+		<javaModelGenerator targetPackage="com.vccloud.portal.db.model" targetProject="../../src/">
+			<property name="enableSubPackages" value="true" />
+			<property name="trimStrings" value="true" />
+		</javaModelGenerator>
+
+		<sqlMapGenerator targetPackage="sqlmaps" targetProject="../../resources/">
+			<property name="enableSubPackages" value="true" />
+		</sqlMapGenerator>
+
+		<daoGenerator type="SPRING" targetPackage="com.vccloud.portal.db.dao" targetProject="../../src/">
+			<property name="enableSubPackages" value="true" />
+		</daoGenerator>
+
+		<!-- 
+		<table tableName="t_ext_vidyo_member"><generatedKey type="post" column="id" sqlStatement="SELECT LAST_INSERT_ID()" /></table>
+		<table tableName="t_ext_vidyo_tenant"><generatedKey type="post" column="id" sqlStatement="SELECT LAST_INSERT_ID()" /></table>
+		<table tableName="t_portal_info"><generatedKey type="post" column="id" sqlStatement="SELECT LAST_INSERT_ID()" /></table>
+		<table tableName="t_ext_vidyo_portal"><generatedKey type="post" column="id" sqlStatement="SELECT LAST_INSERT_ID()" /></table>
+		<table tableName="t_legacy"><generatedKey type="post" column="id" sqlStatement="SELECT LAST_INSERT_ID()" /></table>
+		<table tableName="t_cdr"><generatedKey type="post" column="id" sqlStatement="SELECT LAST_INSERT_ID()" /></table>
+		<table tableName="t_report"><generatedKey type="post" column="id" sqlStatement="SELECT LAST_INSERT_ID()" /></table>
+		<table tableName="t_ext_vidyo_portal_config"><generatedKey type="post" column="id" sqlStatement="SELECT LAST_INSERT_ID()" /></table>
+		 
+		<table tableName="t_ext_vidyo_portal_config"><generatedKey type="post" column="id" sqlStatement="SELECT LAST_INSERT_ID()" /></table>
+        -->
+        <table tableName="t_portal_info"><generatedKey type="post" column="id" sqlStatement="SELECT LAST_INSERT_ID()" /></table>
+	 <!-- business -->
+	 <!-- 
+	 	<jdbcConnection driverClass="com.mysql.jdbc.Driver" connectionURL="jdbc:mysql://v.seekoom.com/portal2" userId="cdraccess" password="123">
+		</jdbcConnection>
+
+		<javaTypeResolver>
+			<property name="forceBigDecimals" value="false" />
+		</javaTypeResolver>
+
+		<javaModelGenerator targetPackage="com.vccloud.portal.db.model" targetProject="../../src/">
+			<property name="enableSubPackages" value="true" />
+			<property name="trimStrings" value="true" />
+		</javaModelGenerator>
+
+		<sqlMapGenerator targetPackage="sqlmaps" targetProject="../../resources/">
+			<property name="enableSubPackages" value="true" />
+		</sqlMapGenerator>
+
+		<daoGenerator type="SPRING" targetPackage="com.vccloud.portal.db.dao" targetProject="../../src/">
+			<property name="enableSubPackages" value="true" />
+		</daoGenerator>
+
+		<table tableName="ClientInstallations2"></table>
+		<table tableName="ConferenceCall2"></table>
+	 -->
+	</ibatorContext>
+</ibatorConfiguration>

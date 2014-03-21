@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMapConfig PUBLIC "-//ibatis.apache.org//DTD SQL Map Config 2.0//EN"
+    "http://ibatis.apache.org/dtd/sql-map-config-2.dtd">
+<sqlMapConfig>
+	<settings cacheModelsEnabled="true" enhancementEnabled="true"
+		lazyLoadingEnabled="true" maxRequests="32" maxSessions="10"
+		maxTransactions="5" useStatementNamespaces="true" />
+	<sqlMap resource="sqlmaps/t_ext_vidyo_member_SqlMap.xml" />
+	<sqlMap resource="sqlmaps/t_ext_vidyo_tenant_SqlMap.xml" />
+	<sqlMap resource="sqlmaps/t_portal_info_SqlMap.xml" />
+	<sqlMap resource="sqlmaps/t_ext_vidyo_portal_SqlMap.xml" />
+	<sqlMap resource="sqlmaps/t_legacy_SqlMap.xml" />
+	<sqlMap resource="sqlmaps/t_cdr_SqlMap.xml" />
+	<sqlMap resource="sqlmaps/t_report_SqlMap.xml" />
+	<sqlMap resource="sqlmaps/t_ext_vidyo_portal_config_SqlMap.xml" />
+	<sqlMap resource="sqlmaps/t_portal_email_config_SqlMap.xml" />
+</sqlMapConfig>

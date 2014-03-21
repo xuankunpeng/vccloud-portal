@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:jee="http://www.springframework.org/schema/jee"
+	xsi:schemaLocation="
+	http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-2.5.xsd
+	http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+	http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.5.xsd
+	http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.5.xsd
+	http://www.springframework.org/schema/jee
+	http://www.springframework.org/schema/jee/spring-jee-2.5.xsd">
+
+	<bean id="serviceDefault" class="com.vccloud.portal.service.impl.ServiceDefault">
+		<property name="tExtVidyoMemberDAO">
+			<ref bean="tExtVidyoMemberDAO" />
+		</property>
+		<property name="tExtVidyoTenantDAO">
+			<ref bean="tExtVidyoTenantDAO" />
+		</property>
+		<property name="clientinstallations2DAO">
+			<ref bean="clientinstallations2DAO" />
+		</property>
+		<property name="conferencecall2DAO">
+			<ref bean="conferencecall2DAO" />
+		</property>
+		<property name="tPortalInfoDAO">
+			<ref bean="tPortalInfoDAO" />
+		</property>
+		<property name="tExtVidyoPortalDAO">
+			<ref bean="tExtVidyoPortalDAO" />
+		</property>
+		<property name="tLegacyDAO">
+			<ref bean="tLegacyDAO" />
+		</property>
+		<property name="tCdrDAO">
+			<ref bean="tCdrDAO" />
+		</property>
+		<property name="tReportDAO">
+			<ref bean="tReportDAO" />
+		</property>
+		<property name="tExtVidyoPortalConfigDAO">
+			<ref bean="tExtVidyoPortalConfigDAO" />
+		</property>
+		<property name="tPortalEmailConfigDAO">
+			<ref bean="tPortalEmailConfigDAO" />
+		</property>
+	</bean>
+
+	<bean id="userService" class="com.vccloud.portal.service.impl.UserServiceImpl"
+		parent="serviceDefault" />
+	<bean id="vidyoService" class="com.vccloud.portal.service.impl.VidyoServiceImpl"
+		parent="serviceDefault" />
+	<bean id="scheduleService" class="com.vccloud.portal.service.impl.ScheduleServiceImpl"
+		parent="serviceDefault" />
+</beans>

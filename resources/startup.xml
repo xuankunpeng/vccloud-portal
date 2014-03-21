@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config>
+	<Enable>false</Enable>
+	<Period>15000</Period>
+	<Tenant>
+		<TenantURL>v.seekoom.com</TenantURL>
+		<AdminName>admin</AdminName>
+		<AdminPassword>password</AdminPassword>
+		<Room>
+			<RoomId>582</RoomId>
+			<IgnoreId>1;2;3</IgnoreId>
+			<MuteAudio>true</MuteAudio>
+			<MuteVideo>true</MuteVideo>
+		</Room>
+		<Room>
+			<RoomId>32</RoomId>
+			<IgnoreId>1;2;3</IgnoreId>
+			<MuteAudio>true</MuteAudio>
+			<MuteVideo>true</MuteVideo>
+		</Room>
+	</Tenant>
+	<Tenant>
+		<TenantURL>v.seekoom.com</TenantURL>
+		<AdminName>admin</AdminName>
+		<AdminPassword>password</AdminPassword>
+		<Room>
+			<RoomId>34</RoomId>
+			<IgnoreId>1;2;3</IgnoreId>
+			<MuteAudio>true</MuteAudio>
+			<MuteVideo>true</MuteVideo>
+		</Room>
+	</Tenant>
+</Config>

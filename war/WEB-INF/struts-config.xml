@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts-config PUBLIC
+  "-//Apache Software Foundation//DTD Struts Configuration 1.1//EN"
+  "http://struts.apache.org/dtds/struts-config_1_1.dtd">
+
+<struts-config>
+	<action-mappings>
+		<action path="/user/signIn" type="com.vccloud.portal.action.user.SignInAction" />
+		<action path="/user/signOut" type="com.vccloud.portal.action.user.SignOutAction" />
+		<action path="/vidyo/searchConferenceCall2s" type="com.vccloud.portal.action.vidyo.SearchConferenceCall2sAction" />
+		<action path="/vidyo/storePortalInfo" type="com.vccloud.portal.action.vidyo.StorePortalInfoAction" />
+		<action path="/vidyo/getPortalInfo" type="com.vccloud.portal.action.vidyo.GetPortalInfoAction" />
+		<action path="/user/searchMembers" type="com.vccloud.portal.action.user.SearchMembersAction" />
+		<action path="/user/updateMemberPassword" type="com.vccloud.portal.action.user.UpdateMemberPasswordAction" />
+		<action path="/user/updatePassword" type="com.vccloud.portal.action.user.UpdatePasswordAction" />
+		<action path="/user/updateDisplayName" type="com.vccloud.portal.action.user.UpdateDisplayNameAction" />
+		<action path="/user/updateMemberDisplayName" type="com.vccloud.portal.action.user.UpdateMemberDisplayNameAction" />
+		<action path="/vidyo/searchRooms" type="com.vccloud.portal.action.vidyo.SearchRoomsAction" />
+		<action path="/vidyo/updateRoomName" type="com.vccloud.portal.action.vidyo.UpdateRoomNameAction" />
+		<action path="/vidyo/updateRoomPin" type="com.vccloud.portal.action.vidyo.UpdateRoomPinAction" />
+		<action path="/vidyo/clearRoom" type="com.vccloud.portal.action.vidyo.ClearRoomAction" />
+		<action path="/vidyo/storeLegacy" type="com.vccloud.portal.action.vidyo.StoreLegacyAction" />
+		<action path="/vidyo/getLegacies" type="com.vccloud.portal.action.vidyo.GetLegaciesAction" />
+		<action path="/vidyo/assignLegacies" type="com.vccloud.portal.action.vidyo.AssignLegaciesAction" />
+		<action path="/vidyo/deleteLegacy" type="com.vccloud.portal.action.vidyo.DeleteLegacyAction" />
+		<action path="/vidyo/searchLegacies" type="com.vccloud.portal.action.vidyo.SearchLegaciesAction" />
+		<action path="/vidyo/getRoomProfile" type="com.vccloud.portal.action.vidyo.GetRoomProfileAction" />
+		<action path="/vidyo/storeRoomProfile" type="com.vccloud.portal.action.vidyo.StoreRoomProfileAction" />
+		<action path="/vidyo/resetRoomURL" type="com.vccloud.portal.action.vidyo.ResetRoomURLAction" />
+		<action path="/vidyo/searchCdrs" type="com.vccloud.portal.action.vidyo.SearchCdrsAction" />
+		<action path="/vidyo/getEmailConfig" type="com.vccloud.portal.action.vidyo.GetEmailConfigAction"/>
+		<action path="/vidyo/storeEmailConfig" type="com.vccloud.portal.action.vidyo.StoreEmailConfigAction"/>
+		<action path="/vidyo/sendEmail" type="com.vccloud.portal.action.vidyo.SendEmailAction"/>
+		<action path="/vidyo/getEmails" type="com.vccloud.portal.action.vidyo.GetEmailsAction"/>
+		<action path="/vidyo/storeRoom" type="com.vccloud.portal.action.vidyo.StoreRoomAction"/>
+		<action path="/vidyo/deleteRoom" type="com.vccloud.portal.action.vidyo.DeleteRoomAction" />
+	</action-mappings>
+</struts-config>

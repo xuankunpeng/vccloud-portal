@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app version="2.4" xmlns="http://java.sun.com/xml/ns/j2ee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+
+	<display-name>VcCloud Portal API</display-name>
+
+	<context-param>
+		<param-name>contextConfigLocation</param-name>
+		<param-value>classpath:**/applicationContext*.xml</param-value>
+	</context-param>
+	<context-param>
+		<param-name>shutdown-on-unload</param-name>
+		<param-value>true</param-value>
+	</context-param>
+
+	<filter>
+		<filter-name>encodingFilter</filter-name>
+		<filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
+		<init-param>
+			<param-name>encoding</param-name>
+			<param-value>utf-8</param-value>
+		</init-param>
+	</filter>
+	<filter-mapping>
+		<filter-name>encodingFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+
+	<servlet>
+		<servlet-name>main</servlet-name>
+		<servlet-class>org.apache.struts.action.ActionServlet</servlet-class>
+		<init-param>
+			<param-name>config</param-name>
+			<param-value>/WEB-INF/struts-config.xml</param-value>
+		</init-param>
+		<init-param>
+			<param-name>debug</param-name>
+			<param-value>2</param-value>
+		</init-param>
+		<init-param>
+			<param-name>listings</param-name>
+			<param-value>false</param-value>
+		</init-param>
+		<init-param>
+			<param-name>detail</param-name>
+			<param-value>2</param-value>
+		</init-param>
+		<init-param>
+			<param-name>validate</param-name>
+			<param-value>true</param-value>
+		</init-param>
+		<load-on-startup>2</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>main</servlet-name>
+		<url-pattern>*.do</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>AccountStatementXML</servlet-name>
+		<servlet-class>com.vccloud.portal.servlet.AccountStatementXML</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AccountStatementXML</servlet-name>
+		<url-pattern>/servlet/AccountStatementXML</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>LogoServlet</servlet-name>
+		<servlet-class>com.vccloud.portal.servlet.LogoServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LogoServlet</servlet-name>
+		<url-pattern>/servlet/Logo</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>GetVidyoPortalURLServlet</servlet-name>
+		<servlet-class>com.vccloud.portal.servlet.GetVidyoPortalURLServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GetVidyoPortalURLServlet</servlet-name>
+		<url-pattern>/servlet/getVidyoPortalURL</url-pattern>
+	</servlet-mapping>
+
+	<listener>
+		<listener-class>com.vccloud.portal.listener.LegacingListener</listener-class>
+	</listener>
+	<listener>
+		<listener-class>com.vccloud.portal.listener.MuteAudioAndVideoListener</listener-class>
+	</listener>
+	<listener>
+		<listener-class>com.vccloud.portal.listener.ImportCdrListener</listener-class>
+	</listener>
+	<listener>
+		<listener-class>com.vccloud.portal.listener.ImportReportListener</listener-class>
+	</listener>
+</web-app>
